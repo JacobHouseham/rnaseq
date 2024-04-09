@@ -40,6 +40,7 @@ process QUALIMAP_RNASEQ {
         $args \\
         -bam $bam \\
         -gtf $gtf \\
+        -nw 2000 \\
         -p $strandedness \\
         $paired_end \\
         -outdir $prefix
